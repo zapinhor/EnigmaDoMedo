@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vinda</title>
+    <script>
+        function verificarsenha() {
+            const senhaCorreta = "roxo";
+
+            const inputSenha = document.getElementById('password')
+            const senhaDigitada = inputSenha.value;
+
+            if (senhaDigitada === senhaCorreta) {
+                alert('Parabéns, você acertou!');
+                window.location.href = 'roxo.html';
+            } else {
+                alert('Incorreto, tente novamente.');
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texto">
+    <h3>Vamos para algumas dicas:</h3>
+    <p>Todas as respostas são em português, porém não use acentuação e coloque a resposta toda junta.</p>
+    <p>Tenha muita atenção e anote todas as respostas em algum lugar.</p>
+    <p>Fique de olho na parte final de cada link, lá contém algumas palavras importantes.</p>
+    <p>Não vale roubar hein! Boa sorte...</p>
+    <p>Vamos lá, como a primeira resposta coloque "roxo".</p>
+    </div>
+    <div class="botao">
+        <label for="password">Insira sua resposta:</label>
+        <input type="text" id="password" />
+        <button onclick="verificarsenha()">▶</button>
+    </div>
+    
+</body>
+</html>

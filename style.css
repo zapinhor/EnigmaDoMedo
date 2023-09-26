@@ -1,0 +1,56 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: fnaf;
+}
+
+body {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.botao {
+    background-color: #39055e;
+    padding: 20px;
+    border: 1px solid #d4db09;
+    border-radius:15px ;
+    width: 300px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #39055e;
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    border: 1px solid #d4db09;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px 30px;
+    background-color: rgb(136, 38, 228);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(119, 6, 224);
+}
+
+@font-face {
+    font-family: fnaf;
+    src: url(FiveFontsatFreddys-Regular.ttf) format('truetype');
+}
+

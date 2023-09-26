@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <script>
+        function verificarsenha() {
+            const senhaCorreta = "oqueeurealmentequeria";
+
+            const inputSenha = document.getElementById('password')
+            const senhaDigitada = inputSenha.value;
+
+            if (senhaDigitada === senhaCorreta) {
+                alert('Parabéns, você acertou!');
+                window.location.href = 'existe.html';
+            } else {
+                alert('Incorreto, tente novamente.');
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texto">
+        <h2>essa aqui parece estar meio... Paranormal...</h2>
+        <img src="https://cdn.discordapp.com/attachments/968920594596909166/1156330449799491644/codigo.png?ex=65149426&is=651342a6&hm=ea392bf2f1a01aa84bb548df7db75c7544cfdbc971549c4af6648be7dd73c7f5&" width="500px">
+    
+    
+    </div>
+    <div class="botao">
+        <label for="password">Insira sua resposta:</label>
+        <input type="text" id="password" />
+        <button onclick="verificarsenha()">▶</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <script>
+        function verificarsenha() {
+            const senhaCorreta = "efoiapartirdai";
+
+            const inputSenha = document.getElementById('password')
+            const senhaDigitada = inputSenha.value;
+
+            if (senhaDigitada === senhaCorreta) {
+                alert('Parabéns, você acertou!');
+                window.location.href = 'amor.html';
+            } else {
+                alert('Incorreto, tente novamente.');
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texto">
+        <h2>lembra das aulas do Julio? Vai precisar rs</h2>
+        <p>01100101 01100110 01101111 01101001 01100001 01110000 01100001 01110010 01110100 01101001 01110010 01100100 01100001 01101001 </p>
+    
+    
+    
+    </div>
+    <div class="botao">
+        <label for="password">Insira sua resposta:</label>
+        <input type="text" id="password" />
+        <button onclick="verificarsenha()">▶</button>
+    </div>
+    
+</body>
+</html>

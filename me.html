@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <script>
+        function verificarsenha() {
+            const senhaCorreta = "masapenasumamechamouverdadeiraatencao";
+
+            const inputSenha = document.getElementById('password')
+            const senhaDigitada = inputSenha.value;
+
+            if (senhaDigitada === senhaCorreta) {
+                alert('Parabéns, você acertou!');
+                window.location.href = 'mostrar.html';
+            } else {
+                alert('Incorreto, tente novamente.');
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texto">
+    <h3>Foi fácil né? Vamos continuar hehe</h3>
+    <h2>e se você tentasse desembaralhar essa frase? rs</h2>
+    <p>apenas chamou uma verdadeira me mas atenção</p>
+    
+    
+    
+    </div>
+    <div class="botao">
+        <label for="password">Insira sua resposta:</label>
+        <input type="text" id="password" />
+        <button onclick="verificarsenha()">▶</button>
+    </div>
+    
+</body>
+</html>

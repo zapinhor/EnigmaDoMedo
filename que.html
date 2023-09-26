@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <script>
+        function verificarsenha() {
+            const senhaCorreta = "envoltodeumlindoeapaixonantesorriso";
+
+            const inputSenha = document.getElementById('password')
+            const senhaDigitada = inputSenha.value;
+
+            if (senhaDigitada === senhaCorreta) {
+                alert('Parabéns, você acertou!');
+                window.location.href = 'o.html';
+            } else {
+                alert('Incorreto, tente novamente.');
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texto">
+      <img src="https://cdn.discordapp.com/attachments/968920594596909166/1156319676293459969/Imagem_do_WhatsApp_de_2023-09-23_as_23.32.17.jpg?ex=65148a1e&is=6513389e&hm=ab25e1f0c32e3a6d6a10d73b9845c4fc8a15219b974434bf06bde339a8bf21ed&" width="300px" >      
+        <p style="color: black">envolto de um lindo e apaixonante sorriso</p>
+    
+    
+    
+    </div>
+    <div class="botao">
+        <label for="password">Insira sua resposta:</label>
+        <input type="text" id="password" />
+        <button onclick="verificarsenha()">▶</button>
+    </div>
+    
+</body>
+</html>
